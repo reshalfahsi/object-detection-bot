@@ -1,2 +1,2 @@
-# simple-rest-api
-collection of simple REST API
+# Simple REST API
+Collection of Simple REST API
