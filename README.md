@@ -1,2 +1,5 @@
-# Simple REST API
-Collection of Simple REST API
+# Simple Backend Project
+
+Collection of simple backend project.
+
+## Rest API
