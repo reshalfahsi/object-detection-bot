@@ -1,5 +1,10 @@
-# Simple Backend Project
+# JWT Authentication API
 
-Collection of simple backend project.
+Minimal implementation of JWT based authentication API using Golang.
 
-## Rest API
+
+# Deployment
+
+
+
+# API Reference
