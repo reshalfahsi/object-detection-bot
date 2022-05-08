@@ -31,7 +31,7 @@ func (a *application) predictHandler(m *tbot.Message) {
 
     	defer func() {
         	if r := recover(); r != nil {
-			a.client.SendMessage(m.Chat.ID, "Unsupported image type")
+			a.client.SendMessage(m.Chat.ID, "Unsupported image type!")
             		fmt.Println("Recovered: ", r)
         	}
     	}()
@@ -99,6 +99,7 @@ func (a *application) predictHandler(m *tbot.Message) {
 
 	_, errrs := a.client.SendPhotoFile(m.Chat.ID, filename, tbot.OptCaption("Predicted Result!"))
 	if errrs != nil {
+		a.client.SendMessage(m.Chat.ID, "There are troubles in the server. Please try again later.")
 		fmt.Println(errrs)
 		return
 	}
@@ -111,5 +112,5 @@ func (a *application) predictHandler(m *tbot.Message) {
 		return
     	}
 
-	fmt.Println("Process complete")
+	fmt.Println("Process complete!")
 }
